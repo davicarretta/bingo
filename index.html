@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bingo Davi</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Bingo do Davizin</h1>
+  
+  <div id="jogo"> <label for="participantName">Nome do participante:</label>
+    <input type="text" id="participantName" id="nomeparticipante">
+    <button onclick="addParticipant()" id="adicionar">Adicionar participante</button>
+  </div>
+  
+  <br>
+  
+  <div id="botoes">
+    <button onclick="startDrawing()">Iniciar sorteio</button>
+    <button onclick="resetProgram()">Restaurar programa</button>
+  </div>
+  
+  <h2>Participantes:</h2>
+  <ul id="listajogadores"></ul>
+  
+  <h2>Cartelas:</h2>
+  <div id="bingoCards"></div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
